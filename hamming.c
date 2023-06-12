@@ -10,7 +10,6 @@ void main() {
     scanf("%d",&data[2]);
     scanf("%d",&data[4]);
  
-    //Calculation of even parity
     data[6]=data[0]^data[2]^data[4];
 data[5]=data[0]^data[1]^data[4];
 data[3]=data[0]^data[1]^data[2];
@@ -43,7 +42,7 @@ printf("\nData received : ");
          printf("%d",dataatrec[i]);
 printf("\nCorrect message is\n");
  
-//if errorneous bit is 0 we complement it else vice versa
+
 if(dataatrec[7-c]==0)
 dataatrec[7-c]=1;
         else
